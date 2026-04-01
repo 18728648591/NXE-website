@@ -1,0 +1,400 @@
+{
+  "brand": {
+    "nameZh": "Hebi Nuoxin Electronics Co., Ltd.",
+    "nameEn": "NEX Power",
+    "tagline": "UAV Battery Solutions Provider"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions",
+    "news": "News",
+    "tech": "Support",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "submit": "Submit",
+    "back": "Back",
+    "loading": "Loading",
+    "page": "Page {n}",
+    "prev": "Previous",
+    "next": "Next",
+    "consult": "Contact sales",
+    "readMore": "Read more",
+    "related": "Related articles"
+  },
+  "hero": {
+    "title": "Professional battery solutions for UAV propulsion",
+    "subtitle": "High C-rate, long cycle life, and dependable safety — NEX Power delivers energy for demanding UAV missions.",
+    "ctaPrimary": "Browse products",
+    "ctaSecondary": "Talk to sales",
+    "slide2": {
+      "title": "High-rate packs with stable power delivery",
+      "subtitle": "Scenario-tuned battery systems for agriculture, surveying, and industrial UAVs.",
+      "cta": "View solutions"
+    },
+    "slide3": {
+      "title": "Quality systems and traceability",
+      "subtitle": "From incoming inspection to final test — traceable and verifiable.",
+      "cta": "Contact us"
+    }
+  },
+  "sections": {
+    "products": "Core products",
+    "productsDesc": "High-performance packs for multirotor, fixed-wing, and industry platforms",
+    "solutions": "Industry solutions",
+    "solutionsDesc": "Tailored energy solutions for agriculture, surveying, logistics, and more",
+    "advantages": "Why NEX Power",
+    "advantagesDesc": "R&D, quality, delivery, and service — end to end",
+    "news": "Latest news",
+    "newsDesc": "Company updates and industry insights",
+    "tech": "Technical articles",
+    "techDesc": "Battery safety, BMS, and UAV application notes",
+    "partners": "Partners",
+    "partnersDesc": "Working with the ecosystem to move the industry forward"
+  },
+  "advantages": {
+    "items": {
+      "a1": {
+        "title": "R&D & customization",
+        "desc": "Cell selection, mechanical design, and BMS strategy — integrated."
+      },
+      "a2": {
+        "title": "Quality system",
+        "desc": "Full-process testing and traceability aligned with industry safety standards."
+      },
+      "a3": {
+        "title": "Reliable delivery",
+        "desc": "Capacity and supply-chain coordination to protect your milestones."
+      },
+      "a4": {
+        "title": "Technical support",
+        "desc": "Presales solutions and responsive aftersales to shorten time-to-field."
+      }
+    }
+  },
+  "products": {
+    "title": "Products",
+    "metaDesc": "NEX Power UAV battery catalog and specifications.",
+    "detailTitle": "Product details",
+    "specsLabel": "Specifications",
+    "filter": {
+      "all": "All",
+      "high_rate": "High-rate LiPo",
+      "smart": "Smart BMS packs",
+      "agri": "Agriculture UAV",
+      "survey": "Survey & inspection",
+      "fpv": "Racing FPV",
+      "oem": "Custom OEM"
+    },
+    "items": {
+      "p1": {
+        "name": "6S high-rate smart pack",
+        "summary": "High discharge rate for mid/large multirotor platforms.",
+        "specs": "22.2V / customizable capacity / 5C+ continuous",
+        "f1": "Low-IR cells",
+        "f2": "Reinforced structure",
+        "f3": "Smart balancing"
+      },
+      "p2": {
+        "name": "Smart BMS battery pack",
+        "summary": "Multi-channel sensing and protection for complex mission profiles.",
+        "specs": "Programmable limits / optional CAN",
+        "f1": "SOX estimation",
+        "f2": "Over-current & short protection",
+        "f3": "Data logging"
+      },
+      "p3": {
+        "name": "Agriculture high-voltage kit",
+        "summary": "Optimized for heavy payload and long endurance.",
+        "specs": "HV platform / quick-connect",
+        "f1": "Dust & moisture resistance",
+        "f2": "Quick-swap design"
+      },
+      "p4": {
+        "name": "Survey & inspection pack",
+        "summary": "Stable output and lightweight structure for long missions.",
+        "specs": "Energy-density tuned",
+        "f1": "Optional low-temp performance",
+        "f2": "Anti-vibration mounting"
+      },
+      "p5": {
+        "name": "FPV racing pack",
+        "summary": "Burst current and minimum weight.",
+        "specs": "High C-rate discharge",
+        "f1": "Compact form factor",
+        "f2": "Burst power"
+      },
+      "p6": {
+        "name": "OEM / ODM programs",
+        "summary": "End-to-end customization from requirements to prototypes.",
+        "specs": "Joint development & certification support",
+        "f1": "Structural simulation",
+        "f2": "Low-volume pilot runs"
+      }
+    }
+  },
+  "solutions": {
+    "title": "Solutions",
+    "metaDesc": "Battery and energy solutions for agriculture, surveying, logistics, and inspection UAVs.",
+    "detailTitle": "Solution details",
+    "modelsLabel": "Applicable models",
+    "highlightsLabel": "Highlights",
+    "filter": {
+      "all": "All industries",
+      "agriculture": "Agriculture",
+      "survey": "Surveying",
+      "logistics": "Logistics",
+      "inspection": "Inspection"
+    },
+    "items": {
+      "s1": {
+        "title": "Agriculture UAV propulsion",
+        "summary": "Heavy lift, dust/moisture protection, and quick swap for busy seasons.",
+        "models": "20L–40L class multirotors",
+        "h1": "HV platform matching",
+        "h2": "Thermal & environmental protection",
+        "h3": "Aftermarket spare parts"
+      },
+      "s2": {
+        "title": "Surveying long-endurance",
+        "summary": "Stable voltage and lightweight structure for wider coverage per sortie.",
+        "models": "Fixed-wing / VTOL",
+        "h1": "Energy density tuning",
+        "h2": "Damping & mounting interfaces"
+      },
+      "s3": {
+        "title": "Urban logistics",
+        "summary": "Fast charge and safety strategies for high-frequency operations.",
+        "models": "Logistics multirotors",
+        "h1": "Fast-charge strategy",
+        "h2": "Operations data integration"
+      },
+      "s4": {
+        "title": "Power & infrastructure inspection",
+        "summary": "Wide-temp reliability for field environments.",
+        "models": "Industry multirotors & small fixed-wing",
+        "h1": "Wide-temperature design",
+        "h2": "Remote diagnostics"
+      }
+    }
+  },
+  "news": {
+    "title": "News",
+    "metaDesc": "Company news, industry updates, and events from NEX Power.",
+    "detailTitle": "Article",
+    "category": {
+      "company": "Company",
+      "industry": "Industry",
+      "expo": "Events"
+    },
+    "items": {
+      "n1": {
+        "title": "New production line ramps up annual capacity",
+        "excerpt": "Key processes expanded to improve delivery performance.",
+        "content": "Hebi Nuoxin Electronics announced the commissioning of a new line focused on UAV power pack assembly and testing, introducing automated inspection to improve consistency and shorten lead times. The company will continue investing in R&D and quality systems."
+      },
+      "n2": {
+        "title": "Updated battery safety guidance — what changed",
+        "excerpt": "New requirements for labeling, storage, and handling.",
+        "content": "Recent industry guidance updates address marking, packaging, and emergency handling. We recommend evaluating thermal-runaway mitigation and maintenance policies early in design. NEX Power can provide test data and compliance guidance."
+      },
+      "n3": {
+        "title": "NEX Power at Shenzhen UAV Expo 2026",
+        "excerpt": "Industry packs for agriculture, surveying, and inspection on display.",
+        "content": "Visit our booth to see sample packs and discuss joint development programs with airframe partners."
+      },
+      "n4": {
+        "title": "Recognized as a quality excellence enterprise",
+        "excerpt": "Continuous improvement in the quality management system.",
+        "content": "The award reflects customer and institutional recognition of our process control and continuous improvement."
+      },
+      "n5": {
+        "title": "UAV market outlook 2026",
+        "excerpt": "Application depth drives diversified power needs.",
+        "content": "Agriculture and inspection remain strong; logistics pilots increase demand for fast charge and operational data capabilities. Battery vendors must balance safety, cost, and delivery."
+      }
+    }
+  },
+  "tech": {
+    "title": "Technical support",
+    "metaDesc": "Articles on Li-ion, BMS, and UAV applications.",
+    "detailTitle": "Article",
+    "tags": {
+      "all": "All",
+      "bms": "BMS",
+      "lipo": "LiPo",
+      "battery": "Battery",
+      "environment": "Environment",
+      "safety": "Safety",
+      "charging": "Charging",
+      "uav": "UAV",
+      "design": "Design"
+    },
+    "items": {
+      "t1": {
+        "title": "Cell balancing strategies",
+        "excerpt": "Passive vs active balancing trade-offs.",
+        "content": "Long-term pack uniformity depends on balancing strategy and usage. Passive balancing is cost-effective but wastes energy; active balancing is efficient but more complex. UAV missions should choose based on mission profile and cycle-life goals, together with BMS accuracy and harness drops."
+      },
+      "t2": {
+        "title": "Capacity and impedance in cold environments",
+        "excerpt": "How low temperatures affect performance and safety margins.",
+        "content": "Ion mobility slows in the cold, reducing usable capacity and increasing impedance. Mission planning should include power margins and avoid cold fast charging. Insulation or preheat may be required."
+      },
+      "t3": {
+        "title": "Fast charging vs safety margins",
+        "excerpt": "Balancing efficiency and cycle life.",
+        "content": "Fast charging accelerates aging and heat accumulation. Use stepped currents, temperature monitoring, and conservative cutoffs in the BMS."
+      },
+      "t4": {
+        "title": "UAV power budgeting basics",
+        "excerpt": "From takeoff weight to endurance — a rough method.",
+        "content": "Estimate hover and cruise power, then select cells and series/parallel topology using available energy and C-rate. Weight and structure strongly affect real endurance — iterate with tests."
+      }
+    }
+  },
+  "about": {
+    "title": "About us",
+    "metaDesc": "Company profile, milestones, and certifications — NEX Power.",
+    "hero": {
+      "title": "Focused on UAV batteries and energy delivery",
+      "subtitle": "Engineering capabilities for airframers and industry customers"
+    },
+    "intro": {
+      "title": "Company profile",
+      "body": "Hebi NEX Power Electronics Co., Ltd. is located at No.131 Haihe Road, Hebi Economic and Technological Development Zone, covering 100 acres. The company has introduced advanced automated and semi-automated production equipment and precision testing instruments, with a modern R&D laboratory and production base. It is one of China's leading battery manufacturers using the automated stacking process. NEX Power focuses on high-rate polymer lithium batteries, integrating R&D, production, sales, and service. Products are widely used in professional drones, car emergency power, aerial photography, remote control models, robots, plant protection machines, and military portable electronic devices. Since its establishment, NEX Power has been committed to providing safe and high-quality battery solutions in modeling, power tools, military equipment, solar and wind energy storage, and national grid applications."
+    },
+    "timeline": {
+      "e1": {
+        "title": "Founded",
+        "desc": "Entered RC and small UAV battery supply."
+      },
+      "e2": {
+        "title": "Capacity expansion",
+        "desc": "Standardized testing and traceability."
+      },
+      "e3": {
+        "title": "Industry programs",
+        "desc": "Agriculture and surveying customers."
+      },
+      "e4": {
+        "title": "Smart manufacturing",
+        "desc": "Automation on critical processes."
+      },
+      "e5": {
+        "title": "Continuous innovation",
+        "desc": "HV platforms and smart BMS rollouts."
+      }
+    },
+    "cert": {
+      "c1": "Quality management system",
+      "c2": "Environmental management",
+      "c3": "Occupational health & safety",
+      "c4": "Product compliance testing"
+    },
+    "gallery": {
+      "g1": "Production floor",
+      "g2": "Incoming cell inspection",
+      "g3": "Pack assembly line",
+      "g4": "Aging test area",
+      "g5": "Finished goods storage",
+      "g6": "Outgoing QC"
+    },
+    "honor": {
+      "h1": "Provincial specialized & innovative enterprise",
+      "h2": "Quality excellence partner",
+      "h3": "Outstanding supplier",
+      "h4": "Technology innovation award"
+    },
+    "honorsTitle": "Honors",
+    "timelineTitle": "Milestones",
+    "galleryTitle": "Factory & workshop",
+    "certTitle": "Certificates"
+  },
+  "contact": {
+    "title": "Contact",
+    "metaDesc": "Address, phone, email, and inquiry — NEX Power.",
+    "cta": {
+      "title": "Ready for your next program?",
+      "subtitle": "Leave your request — we will get back on business days.",
+      "button": "Contact us"
+    },
+    "infoTitle": "Contact details",
+    "label": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "wechat": "WeChat QR"
+    },
+    "info": {
+      "address": "Hebi, Henan, China (full address via sales)",
+      "workTime": "Mon–Fri 9:00–18:00"
+    },
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "success": "Submitted successfully. We will contact you soon."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "col": {
+      "products": "Products & services",
+      "support": "Support",
+      "company": "Company"
+    },
+    "link": {
+      "allProducts": "All products",
+      "solutions": "Solutions",
+      "tech": "Technical articles",
+      "contact": "Contact",
+      "about": "About",
+      "news": "News"
+    }
+  },
+  "aboutSection": {
+    "tag": "About NEX Power",
+    "title": "Focus on New Energy Battery Design & Manufacturing",
+    "subtitle": "Leading High-Rate Polymer Lithium Battery Manufacturer in China",
+    "desc": "Founded in 2013, NEX Power specializes in high-rate lithium battery R&D and manufacturing. Professional team of 200+, annual capacity 30 million Ah, providing quality solutions for UAVs and new energy fields.",
+    "highlights": {
+      "tech": "Master core battery technology, continuously innovate high-rate polymer lithium battery processes",
+      "quality": "Passed ISO9001 quality management system, stable and reliable product performance",
+      "certification": "Won national high-tech enterprise, provincial specialized enterprise and other qualifications"
+    },
+    "stats": {
+      "years": "Years Experience",
+      "patents": "Technical Patents"
+    },
+    "achievements": "Won provincial specialized enterprise, national high-tech enterprise and other honors",
+    "cards": {
+      "team": {
+        "title": "Professional R&D Team",
+        "desc": "200+ senior engineers and technical experts focused on battery technology innovation and product development",
+        "highlight": "Senior Engineers"
+      },
+      "capacity": {
+        "title": "Strong Production Capacity",
+        "desc": "Annual capacity of 30 million ampere-hours, using automated stacking process to ensure product consistency and stability",
+        "highlight": "Automated Stacking"
+      },
+      "applications": {
+        "title": "Wide Application Fields",
+        "desc": "Serving 5000+ UAV customers, covering agriculture, surveying, logistics and other scenarios",
+        "highlight": "Industry Leading"
+      },
+      "quality": {
+        "title": "Excellent Quality Control",
+        "desc": "Product qualification rate reaches 99.9%, passed ISO9001 and other quality system certifications",
+        "highlight": "Quality Assurance"
+      }
+    }
+  }
+}
