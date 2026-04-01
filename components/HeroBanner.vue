@@ -28,7 +28,7 @@ const firstSlide = slides[0]
           <div class="relative h-screen w-full overflow-hidden">
             <img :src="slide.image" alt="" class="absolute inset-0 h-full w-full bg-cover bg-center object-cover"
               loading="eager" @error="onImgError" />
-            <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.6)]"
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.1)]"
               aria-hidden="true" />
             <div class="relative z-[1] mx-auto flex h-full max-w-7xl flex-col justify-center px-4 sm:px-6 lg:px-8">
               <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary drop-shadow md:text-sm">
@@ -45,8 +45,8 @@ const firstSlide = slides[0]
                 <NuxtLink v-for="(btn, bi) in slide.cta" :key="bi" :to="localePath(btn.to)"
                   class="hero-cta inline-flex min-h-[48px] min-w-[160px] items-center justify-center rounded-lg px-6 py-3 text-center text-base font-semibold transition duration-300 ease-out md:px-8"
                   :class="btn.variant === 'outline'
-                      ? 'hero-cta-outline border-2 border-white/80 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20'
-                      : 'hero-cta-primary bg-primary text-white hover:bg-primary-hover'
+                    ? 'hero-cta-outline border-2 border-white/80 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20'
+                    : 'hero-cta-primary bg-primary text-white hover:bg-primary-hover'
                     ">
                   {{ t(btn.label) }}
                 </NuxtLink>
@@ -76,8 +76,8 @@ const firstSlide = slides[0]
               <NuxtLink v-for="(btn, bi) in firstSlide.cta" :key="bi" :to="localePath(btn.to)"
                 class="hero-cta inline-flex min-h-[48px] min-w-[160px] items-center justify-center rounded-lg px-6 py-3 text-center text-base font-semibold transition duration-300 ease-out md:px-8"
                 :class="btn.variant === 'outline'
-                    ? 'hero-cta-outline border-2 border-white/80 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20'
-                    : 'hero-cta-primary bg-primary text-white hover:bg-primary-hover'
+                  ? 'hero-cta-outline border-2 border-white/80 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20'
+                  : 'hero-cta-primary bg-primary text-white hover:bg-primary-hover'
                   ">
                 {{ t(btn.label) }}
               </NuxtLink>

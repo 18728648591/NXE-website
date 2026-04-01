@@ -16,20 +16,10 @@ const { t } = useI18n()
           {{ t('sections.partnersDesc') }}
         </p>
       </div>
-      <div
-        class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6"
-      >
-        <div
-          v-for="p in partners"
-          :key="p.id"
-          class="flex items-center justify-center rounded-xl border border-gray-100 bg-white p-6 shadow-card"
-        >
-          <img
-            :src="p.logo"
-            :alt="p.name"
-            class="max-h-10 w-auto object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0"
-            @error="onImgError"
-          />
+      <div class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div v-for="p in partners" :key="p.id"
+          class="flex items-center justify-center rounded-xl border border-gray-100 bg-white p-4 shadow-card">
+          <img :src="p.logo" :alt="p.name" class="max-h-12 w-auto object-contain transition" @error="onImgError" />
         </div>
       </div>
     </div>

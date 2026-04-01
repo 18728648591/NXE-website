@@ -6,4 +6,35 @@
   html {
     @apply scroll-smooth antialiased text-gray-900;
   }
+
+  /* Global custom scrollbar (theme #02ad53) */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #02ad53 #e5f8eb;
+  }
+
+  /* WebKit-based browsers */
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #e5f8eb;
+    border-radius: 9999px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #02ad53, #039e46);
+    border-radius: 9999px;
+    border: 2px solid #e5f8eb;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #029e48, #028a3f);
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: #e5f8eb;
+  }
 }
