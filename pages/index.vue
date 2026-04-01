@@ -11,7 +11,6 @@ useSeoMeta({
 
 <template>
   <div>
-    冉
     <HeroBanner />
     <ProductSection />
     <SolutionSection />
