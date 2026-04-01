@@ -10,9 +10,11 @@ export default defineNuxtConfig({
     },
     css: ["~/assets/css/main.css"],
     // modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
-    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@vercel/speed-insights"], // Speed Insights 仅在生产环境使用
+    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxtjs/sitemap", "@nuxtjs/robots", "@vercel/speed-insights"], // 移除 PWA 模块
     // 性能优化
     nitro: {
+        compressPublicAssets: true,
+        minify: true,
         prerender: {
             crawlLinks: true,
             routes: ["/robots.txt", "/sitemap.xml"],
@@ -43,6 +45,9 @@ export default defineNuxtConfig({
         },
     },
     app: {
+        pageTransition: { name: 'page', mode: 'out-in' },
+        layoutTransition: { name: 'layout', mode: 'out-in' },
+        loadingIndicator: '~/components/Loading.vue',
         head: {
             titleTemplate: "%s | NEX Power",
             meta: [
@@ -95,5 +100,32 @@ export default defineNuxtConfig({
                 { rel: "dns-prefetch", href: "https://cdn.bootcdn.net" },
             ],
         },
+    },
+    // Sitemap 配置
+    sitemap: {
+        hostname: process.env.NUXT_PUBLIC_SITE_URL || 'https://your-domain.com', // 请替换为你的实际域名
+        gzip: true,
+        routes: [
+            // 动态新闻页面
+            ...require('./data/news.js').newsItems.map(item => `/news/${item.slug}`),
+            // 动态产品页面
+            ...require('./data/products.js').products.map(item => `/products/${item.slug}`),
+            // 动态解决方案页面
+            ...require('./data/solutions.js').solutions.map(item => `/solutions/${item.slug}`),
+            // 动态技术文章页面
+            ...require('./data/techArticles.js').techArticles.map(item => `/tech/${item.slug}`),
+        ],
+    },
+    // Robots 配置
+    robots: {
+        UserAgent: '*',
+        Disallow: ['/admin'], // 如果有需要屏蔽的路径
+        Allow: '/',
+        Sitemap: (req) => `https://${req.headers.host}/sitemap.xml`,
+    },
+    // Sitemap 配置
+    sitemap: {
+        hostname: process.env.NUXT_PUBLIC_SITE_URL || 'https://your-domain.com',
+        gzip: true,
     },
 });
