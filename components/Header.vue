@@ -72,50 +72,24 @@ onUnmounted(() => {
     使用 fixed 叠在首屏 Hero 之上；滚过一整屏后切换为白底。
     （若仅用 absolute，整页滚动时顶栏会随文档流移出视口，无法实现「滚过 Banner 仍固定顶栏」。）
   -->
-  <header
-    class="fixed left-0 top-0 z-50 w-full transition-[background-color,box-shadow,color] duration-300"
-    :class="
-      isSolid
-        ? 'bg-white shadow-md text-black'
-        : 'bg-black/30 text-white shadow-none backdrop-blur-[2px]'
-    "
-  >
-    <div
-      class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8"
-    >
-      <NuxtLink
-        :to="localePath('/')"
-        class="group flex min-h-[44px] shrink-0 items-center py-1"
-        @click="closeDrawer"
-      >
-        <img
-          :src="brandLogo.src"
-          :alt="brandLogo.alt"
+  <header class="fixed left-0 top-0 z-50 w-full transition-[background-color,box-shadow,color] duration-300" :class="isSolid
+      ? 'bg-white shadow-md text-black'
+      : 'bg-black/30 text-white shadow-none backdrop-blur-[2px]'
+    ">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <NuxtLink :to="localePath('/')" class="group flex min-h-[44px] shrink-0 items-center" @click="closeDrawer">
+        <img :src="brandLogo.src" :alt="brandLogo.alt"
           class="h-8 w-auto max-h-12 max-w-[9rem] object-contain object-left sm:h-10 sm:max-w-[11rem] md:h-11 lg:h-12 lg:max-w-[14rem]"
-          loading="eager"
-          decoding="async"
-          @error="onImgError"
-        />
+          loading="eager" decoding="async" @error="onImgError" />
       </NuxtLink>
 
-      <nav
-        class="hidden items-center gap-1 lg:flex"
-        aria-label="Main"
-      >
-        <NuxtLink
-          v-for="item in headerNav"
-          :key="item.id"
-          :to="localePath(item.to)"
-          class="rounded-lg px-3 py-2 text-sm font-medium drop-shadow-lg transition-colors duration-300"
-          :class="
-            isSolid
+      <nav class="hidden items-center gap-1 lg:flex" aria-label="Main">
+        <NuxtLink v-for="item in headerNav" :key="item.id" :to="localePath(item.to)"
+          class="rounded-lg px-3 py-2 text-sm font-medium drop-shadow-lg transition-colors duration-300" :class="isSolid
               ? 'text-gray-800 hover:bg-primary/10 hover:text-primary'
               : 'text-white hover:bg-white/10 hover:text-primary'
-          "
-          :active-class="
-            isSolid ? 'bg-primary/10 text-primary' : 'bg-white/15 text-primary'
-          "
-        >
+            " :active-class="isSolid ? 'bg-primary/10 text-primary' : 'bg-white/15 text-primary'
+            ">
           {{ t(item.labelKey) }}
         </NuxtLink>
       </nav>
@@ -123,80 +97,42 @@ onUnmounted(() => {
       <div class="flex items-center gap-2">
         <div
           class="flex items-center overflow-hidden rounded-lg border text-xs font-medium transition-colors duration-300"
-          :class="
-            isSolid
+          :class="isSolid
               ? 'border-gray-200'
               : 'border-white/40 bg-black/20 backdrop-blur-sm'
-          "
-        >
-          <NuxtLink
-            :to="switchLocalePath('zh')"
-            class="px-2 py-1.5 drop-shadow-lg transition-colors duration-300"
-            :class="
-              $i18n.locale === 'zh'
+            ">
+          <NuxtLink :to="switchLocalePath('zh')" class="px-2 py-1.5 drop-shadow-lg transition-colors duration-300"
+            :class="$i18n.locale === 'zh'
                 ? 'bg-primary text-white'
                 : isSolid
                   ? 'text-gray-700 hover:text-primary'
                   : 'text-white hover:text-primary'
-            "
-          >
+              ">
             中文
           </NuxtLink>
-          <NuxtLink
-            :to="switchLocalePath('en')"
-            class="px-2 py-1.5 drop-shadow-lg transition-colors duration-300"
-            :class="
-              $i18n.locale === 'en'
+          <NuxtLink :to="switchLocalePath('en')" class="px-2 py-1.5 drop-shadow-lg transition-colors duration-300"
+            :class="$i18n.locale === 'en'
                 ? 'bg-primary text-white'
                 : isSolid
                   ? 'text-gray-700 hover:text-primary'
                   : 'text-white hover:text-primary'
-            "
-          >
+              ">
             EN
           </NuxtLink>
         </div>
 
-        <button
-          type="button"
+        <button type="button"
           class="inline-flex items-center justify-center rounded-lg p-2 drop-shadow-lg transition-colors duration-300 lg:hidden"
-          :class="
-            isSolid
+          :class="isSolid
               ? 'text-gray-900 hover:bg-gray-100'
               : 'text-white hover:bg-white/10'
-          "
-          :aria-expanded="drawerOpen"
-          aria-controls="nav-drawer"
-          @click="toggleDrawer"
-        >
+            " :aria-expanded="drawerOpen" aria-controls="nav-drawer" @click="toggleDrawer">
           <span class="sr-only">Menu</span>
-          <svg
-            v-if="!drawerOpen"
-            class="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+          <svg v-if="!drawerOpen" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-          <svg
-            v-else
-            class="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
+          <svg v-else class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
@@ -204,58 +140,24 @@ onUnmounted(() => {
 
     <Teleport to="body">
       <Transition name="drawer-fade">
-        <div
-          v-if="drawerOpen"
-          id="nav-drawer"
-          class="fixed inset-0 z-[60] lg:hidden"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Navigation"
-        >
-          <div
-            class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"
-            @click="closeDrawer"
-          />
-          <aside
-            class="drawer-panel absolute inset-y-0 right-0 flex w-[min(100%,20rem)] flex-col bg-white shadow-2xl"
-          >
-            <div
-              class="flex items-center justify-between border-b border-gray-100 px-4 py-3"
-            >
+        <div v-if="drawerOpen" id="nav-drawer" class="fixed inset-0 z-[60] lg:hidden" role="dialog" aria-modal="true"
+          aria-label="Navigation">
+          <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]" @click="closeDrawer" />
+          <aside class="drawer-panel absolute inset-y-0 right-0 flex w-[min(100%,20rem)] flex-col bg-white shadow-2xl">
+            <div class="flex items-center justify-between border-b border-gray-100 px-4 py-3">
               <span class="text-sm font-semibold text-gray-900">Menu</span>
-              <button
-                type="button"
-                class="rounded-lg p-2 text-gray-600 hover:bg-gray-100 hover:text-primary"
-                @click="closeDrawer"
-              >
+              <button type="button" class="rounded-lg p-2 text-gray-600 hover:bg-gray-100 hover:text-primary"
+                @click="closeDrawer">
                 <span class="sr-only">Close</span>
-                <svg
-                  class="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
-            <nav
-              class="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4"
-              aria-label="Mobile"
-            >
-              <NuxtLink
-                v-for="item in headerNav"
-                :key="item.id"
-                :to="localePath(item.to)"
+            <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4" aria-label="Mobile">
+              <NuxtLink v-for="item in headerNav" :key="item.id" :to="localePath(item.to)"
                 class="rounded-lg px-3 py-3 text-base font-medium text-gray-800 transition-colors hover:bg-primary/10 hover:text-primary"
-                active-class="bg-primary/10 text-primary"
-                @click="closeDrawer"
-              >
+                active-class="bg-primary/10 text-primary" @click="closeDrawer">
                 {{ t(item.labelKey) }}
               </NuxtLink>
             </nav>

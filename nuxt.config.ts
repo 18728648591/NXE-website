@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         port: 8888,
     },
     css: ["~/assets/css/main.css"],
-    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@vercel/speed-insights"],
     i18n: {
         /** Resolve locale files from project root `locales/` (not `i18n/locales/`) */
         restructureDir: ".",
